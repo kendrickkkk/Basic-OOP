@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studentmanagement</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 text-center text-info mb-3>Quan ly sinh vien</h1>
+      <form class="mb-3">
+        <div mb-3>
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+        <br />
+        <div>
+          <label for="birthday" class="form-label">Birthday</label>
+          <input type="date" id="birthday" class="form-control" />
+        </div>
+        <br />
+        <button class="btn btn-primary">Add</button>
+      </form>
+
+      <div id="notification">
+        <!-- <div class="alert alert-success">Insert successful</div> -->
+      </div>
+
+      <table class="table table-bodered table-hover">
+        <thead>
+          <tr>
+            <th>Stt</th>
+            <th>Ten</th>
+            <th>Ngay sinh</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- <tr>
+            <td>1</td>
+            <td>Hung</td>
+            <td>22/03/1990</td>
+            <td>
+              <button class="btn btn-danger bbtn-sm btn-remove" data-id="haha">
+                Delete
+              </button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
